@@ -398,7 +398,7 @@ public class RequestUtil {
 	public static void addCookie(HttpServletResponse response, String key, String value, Integer maxAge) {
 		try {
 			Cookie cookie = new Cookie(key, value);
-			// cookie.setDomain(".1chemic.com"); // cookie作用域
+			// cookie作用域
 			cookie.setPath("/");
 			if (maxAge != null) {
 				cookie.setMaxAge(maxAge.intValue());
